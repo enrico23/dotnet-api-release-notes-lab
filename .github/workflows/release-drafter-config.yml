@@ -1,49 +1,31 @@
-﻿name-template: 'v$NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
-
-template: |
-  ## 📦 Release $NEXT_PATCH_VERSION
-
-  $CHANGES
-
+﻿name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: '🚀 Features'
     labels:
-      - feature
-      - enhancement
-
+      - 'feature'
+      - 'enhancement'
   - title: '🐛 Bug Fixes'
     labels:
-      - bug
-
-  - title: '🧹 Maintenance'
-    labels:
-      - chore
-      - refactor
-
-  - title: '📚 Documentation'
-    labels:
-      - docs
-
-change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
-
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: '🧰 Maintenance'
+    label: 'chore'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-resolver:
   major:
     labels:
-      - major
+      - 'major'
   minor:
     labels:
-      - minor
-      - feature
-      - enhancement
+      - 'minor'
   patch:
     labels:
-      - patch
-      - bug
-      - chore
+      - 'patch'
   default: patch
+template: |
+  ## Changes
 
-exclude-labels:
-  - skip-release-notes
-
-replacers: []
+  $CHANGES
