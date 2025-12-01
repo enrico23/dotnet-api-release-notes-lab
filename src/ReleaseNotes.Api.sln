@@ -13,7 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{742C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C5E39261-DDCF-44E7-A2DC-3C354BADA089}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\release-drafter-config.yml = ..\.github\workflows\release-drafter-config.yml
 		..\.github\workflows\release-drafter.yml = ..\.github\workflows\release-drafter.yml
 	EndProjectSection
 EndProject
