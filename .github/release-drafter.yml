@@ -1,4 +1,7 @@
 template: |
-  ## What’s Changed
+  ## Whatï¿½s Changed
 
   $CHANGES
+
+  name-template: 'v$RESOLVED_VERSION'
+  tag-template: 'v$RESOLVED_VERSION'
